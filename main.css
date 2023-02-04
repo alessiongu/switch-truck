@@ -1,0 +1,380 @@
+/* general
+
+    font-family: botanika-web, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    font-family: botanika-mono-web, monospace;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #f4f3f3;
+    color: white;
+    color: black;
+    color: #00a14b;
+
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.p1{
+    font-family: "botanika-mono-web", monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: "botanika-mono-web", monospace;
+    text-transform: uppercase;
+    font-size: 4em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.244);
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 30px;
+    padding-bottom: 10px;
+        font-family: "botanika-mono-web", monospace;
+    text-transform: uppercase;
+}
+
+
+h2, h3{
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 1em;
+}
+
+h3, p{
+    font-family: "botanika-web", sans-serif;
+}
+
+
+
+.bodysection{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+/* landing */
+
+.landingsection{
+    height: 100vh;
+    width: 100vw;
+    background-color: #00a14b;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 24%);
+}
+
+.titlecontainer{
+    position: absolute;
+    top: 45vh;
+    left: 15vw;
+    padding-right: 500px;
+}
+
+.landingbackground{
+    position: relative;
+    top: 20vh;
+    overflow: hidden;
+    margin-left: 30vw;
+    
+}
+
+.landingbackground img{
+    height: 75vh;
+}
+
+.swlogo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.swlogo img{
+    height: 200px;
+}
+
+.unilogo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.unilogo img{
+    height: 200px;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 94vh;
+    margin-left: 48vw;
+}
+
+.arrow img{
+    height: 40px;
+}
+
+/* menu */
+
+.menusection{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.weeklymenu1, .weeklymenu2{
+    height: 300px;
+    width: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.053);
+}
+
+.weeklymenu1{
+    margin-right: 40px;
+}
+
+.weeklymenu1, .aboutcontainer{
+    background-color: #f4f3f3;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.weeklymenu2{
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.369);
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 340px;
+}
+
+.menudishcontainer{
+    display: flex;
+        max-height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.weeklymenu2overflow{
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-right: 20px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.menudishcontainer img{
+    padding: 20px;
+}
+
+.weeklymenudish{
+    padding-top: 20px;
+}
+
+.weeklymenutext{
+    overflow: hidden;
+}
+
+/* about */
+
+.aboutsection{
+    margin-bottom: 40px;
+}
+
+.aboutcontainer{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.053);
+}
+
+.aboutitemns{
+    display: flex;
+}
+
+.abouttext{
+    margin-right: 40px;
+    max-width: 47%;
+    margin-top: 20px;
+}
+
+.handindocuments{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.handindocuments-button{
+    width: fit-content;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    display: flex;
+    align-items: center; 
+}
+
+.handindocuments h3{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.abouttexticons{
+    display: flex;
+}
+
+.abouttexticons a{
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.abouttexticons img{
+    padding-right: 20px;
+}
+
+/* footer */
+
+footer{
+    background-color: #00a14b;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        box-shadow: 2px 2px 20px rgb(0 0 0 / 24%);
+}
+
+footer img{
+    height: 60px;
+
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 1200px){
+    .unilogo img{
+        height: 100px;
+    }
+    .swlogo img{
+        height: 150px;
+    }
+    
+    }
+
+@media screen and (min-width: 700px){
+h1{
+    font-size: 7em;
+
+}
+
+}
+
+@media screen and (max-width: 960px){
+
+    .menusection {
+    flex-direction: column;
+    }
+       .weeklymenu1, .weeklymenu2 {
+    width: auto;
+    }
+       .weeklymenu1 {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .titlecontainer{
+        left: 10vw;
+        max-width: 70vw;
+    }
+    .menusection {
+    flex-direction: column;
+    }
+
+    .aboutitemns {
+        flex-direction: column;
+    }
+    .abouttexticons {
+        margin-bottom: 40px;
+    }
+    .abouttext {
+        margin-right: 20px;
+        max-width: 100%;
+    } 
+
+}
+
+@media screen and (max-width: 500px){
+    .bodysection{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bodysection{
+        font-size: smaller;
+    }
+}
+
+       
+
+@media screen and (max-width: 420px){
+.weeklymenu2 {
+        height: fit-content;
+ 
+    }
+
+}
+
+
+@media screen and (max-width: 380px){
+    .weeklymenu1, .weeklymenu2 {
+        width: auto;
+ 
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .landingbackground{
+        margin-left: -10vw;
+    }
+    .titlecontainer{
+        left: 20px;
+        right: 20px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-height: 900px){
+    .titlecontainer{
+        font-size: small;
+    }
+}
+
+@media screen and (max-height: 830px){
+    .landingbackground img {
+        height: 60vh;
+    }
+    .landingbackground{
+        top: 32vh;
+        margin-left: 24vw;
+    }
+}
+
